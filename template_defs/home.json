@@ -1,0 +1,32 @@
+{
+    "name": "Home",
+    "sections": [
+        {
+            "name": "Header",
+            "id": "headerSection",
+            "fields": [
+                {
+                    "name": "Featured Image",
+                    "type": "media",
+                    "subtype": "image",
+                    "id": "featuredImage"
+                },
+                {
+                    "name": "Title",
+                    "type": "text",
+                    "id": "title"
+                },
+                {
+                    "name": "Subtitle",
+                    "type": "text",
+                    "id": "subtitle"
+                },
+                {
+                    "name": "Description",
+                    "type": "richtext",
+                    "id": "description"
+                }
+            ]
+        }
+    ]
+}

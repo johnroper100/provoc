@@ -1,0 +1,86 @@
+{
+    "name": "Provoc",
+    "version": "1.0",
+    "author": "John Roper",
+    "templates": [
+        {
+            "name": "Home",
+            "id": "home",
+            "file": "home.json"
+        },
+        {
+            "name": "News",
+            "id": "news",
+            "file": "news.json"
+        },
+        {
+            "name": "News Item",
+            "id": "newsItem",
+            "file": "newsItem.json"
+        }
+    ],
+    "collections": [
+        {
+            "name": "Pages",
+            "id": "pages",
+            "icon": "fa-newspaper",
+            "subpath": "",
+            "allowed_templates": [
+                "home",
+                "news"
+            ]
+        },
+        {
+            "name": "News",
+            "id": "news",
+            "icon": "fa-newspaper",
+            "subpath": "news",
+            "allowed_templates": [
+                "newsItem"
+            ]
+        },
+        {
+            "name": "News Items",
+            "id": "newsItems",
+            "icon": "fa-newspaper",
+            "subpath": "news",
+            "allowed_templates": [
+                "newsItem"
+            ]
+        }
+    ],
+    "menus": [
+        {
+            "name": "Sidebar",
+            "id": "sidebar"
+        }
+    ],
+    "forms": [
+        {
+            "name": "Contact",
+            "id": "contact",
+            "fields": [
+                {
+                    "name": "First Name",
+                    "id": "firstName",
+                    "type": "text"
+                },
+                {
+                    "name": "Last Name",
+                    "id": "lastName",
+                    "type": "text"
+                },
+                {
+                    "name": "Email",
+                    "id": "email",
+                    "type": "email"
+                },
+                {
+                    "name": "Message",
+                    "id": "message",
+                    "type": "text"
+                }
+            ]
+        }
+    ]
+}
