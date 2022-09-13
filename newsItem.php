@@ -1,9 +1,11 @@
 <?php include 'header.php'; ?>
 <section>
-	<?php $imageDetails = getMedia($page["content"]["featuredImage"]); ?>
+	<?php if (isset($page["content"]["featuredImage"])) {
+	$imageDetails = getMedia($page["content"]["featuredImage"]); ?>
 	<span class="image main"><img
 			src="<?php echo BASEPATH; ?>/uploads/<?php echo $imageDetails["file"]; ?>"
 			alt="" /></span>
+	<?php } ?>
 	<header class="main">
 		<h1>
 			<?php echo $page["title"]; ?>

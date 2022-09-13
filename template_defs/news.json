@@ -10,6 +10,25 @@
                     "type": "textarea",
                     "id": "headerSubtitle",
                     "value": "See what's going on with our company!"
+                },
+                {
+                    "name": "Category",
+                    "type": "select",
+                    "id": "category",
+                    "options": [
+                        {
+                            "name": "All",
+                            "value": "all"
+                        },
+                        {
+                            "name": "Company",
+                            "value": "company"
+                        },
+                        {
+                            "name": "Product",
+                            "value": "product"
+                        }
+                    ]
                 }
             ]
         }

@@ -14,8 +14,12 @@
                 </ul>
             </div>
             <span class="image object">
-                <?php $imageDetails = getMedia($page["content"]["featuredImage"]); ?>
-                <img src="<?php echo BASEPATH; ?>/uploads/<?php echo $imageDetails["file"]; ?>" alt="" />
+                <?php
+                if (isset($page["content"]["featuredImage"])) {
+                    $imageDetails = getMedia($page["content"]["featuredImage"]);
+                ?>
+                    <img src="<?php echo BASEPATH; ?>/uploads/<?php echo $imageDetails["file"]; ?>" alt="" />
+                <?php } ?>
             </span>
         </section>
 
@@ -25,12 +29,15 @@
                 <h2>Recent Articles</h2>
             </header>
             <div class="posts">
-            <?php foreach(getPages("newsItems", 0) as $newsItem) { ?>
+            <?php foreach(getPages("news", 0) as $newsItem) { ?>
                 <article>
-                    <?php $imageDetails = getMedia($newsItem["content"]["featuredImage"]); ?>
+                    <?php
+                    if (isset($newsItem["content"]["featuredImage"])) {
+                    $imageDetails = getMedia($newsItem["content"]["featuredImage"]); ?>
                     <a href="<?php echo BASEPATH . '/' . $newsItem["collectionSubpath"] . '/' . $newsItem["path"]; ?>" class="image"><img
                             src="<?php echo BASEPATH; ?>/uploads/<?php echo $imageDetails["fileSmall"]; ?>"
                             alt="" /></a>
+                    <?php } ?>
                     <a href="<?php echo BASEPATH . '/' . $newsItem["collectionSubpath"] . '/' . $newsItem["path"]; ?>"><h3><?php echo $newsItem["title"]; ?></h3></a>
                     <p><i>Published <?php echo date("F jS, Y", $newsItem["created"]); ?> by John Roper</i></p>
                 </article>

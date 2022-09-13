@@ -38,15 +38,6 @@
             "allowed_templates": [
                 "newsItem"
             ]
-        },
-        {
-            "name": "News Items",
-            "id": "newsItems",
-            "icon": "fa-newspaper",
-            "subpath": "news",
-            "allowed_templates": [
-                "newsItem"
-            ]
         }
     ],
     "menus": [
