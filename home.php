@@ -1,14 +1,12 @@
 <?php include 'header.php'; ?>
-
-
         <!-- Banner -->
         <section id="banner">
             <div class="content">
                 <header>
-                    <h1><?php echo $page["content"]["title"]; ?></h1>
-                    <p><?php echo $page["content"]["subtitle"]; ?></p>
+                    <h1><?php if (isset($page["content"]["title"])) { echo $page["content"]["title"]; } ?></h1>
+                    <p><?php if (isset($page["content"]["subtitle"])) { echo $page["content"]["subtitle"]; } ?></p>
                 </header>
-                <p><?php echo $page["content"]["description"]; ?></p>
+                <p><?php if (isset($page["content"]["description"])) { echo $page["content"]["description"]; } ?></p>
                 <ul class="actions">
                     <li><a href="<?php echo $page["content"]["link"]; ?>" class="button big">Learn More</a></li>
                 </ul>
@@ -38,8 +36,9 @@
                             src="<?php echo BASEPATH; ?>/uploads/<?php echo $imageDetails["fileSmall"]; ?>"
                             alt="" /></a>
                     <?php } ?>
+                    <?php $authorDetails = getUser($article["createdUser"]); ?>
                     <a href="<?php echo BASEPATH . '/' . $article["collectionSubpath"] . '/' . $article["path"]; ?>"><h3><?php echo $article["title"]; ?></h3></a>
-                    <p><i>Published <?php echo date("F jS, Y", $article["created"]); ?> by John Roper</i></p>
+                    <p><i>Published <?php echo date("F jS, Y", $article["created"]); ?> by <?php echo $authorDetails["name"]; ?></i></p>
                 </article>
             <?php } ?>
             </div>

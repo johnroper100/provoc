@@ -11,7 +11,8 @@
 			<?php echo $page["title"]; ?>
 		</h1>
 		<h4>Published on
-			<?php echo date("F jS, Y", $page["created"]); ?> by John Roper
+			<?php $authorDetails = getUser($page["createdUser"]); ?>
+			<?php echo date("F jS, Y", $page["created"]); ?> by <?php echo $authorDetails["name"]; ?>
 		</h4>
 	</header>
 	<?php echo $page["content"]["pageContent"]; ?>

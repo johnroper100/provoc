@@ -13,8 +13,9 @@
                     src="<?php echo BASEPATH; ?>/uploads/<?php echo $imageDetails["fileSmall"]; ?>"
                     alt="" /></a>
             <?php } ?>
+            <?php $authorDetails = getUser($article["createdUser"]); ?>
             <a href="<?php echo BASEPATH . '/' . $article["collectionSubpath"] . '/' . $article["path"]; ?>"><h3><?php echo $article["title"]; ?></h3></a>
-            <p><i>Published <?php echo date("F jS, Y", $article["created"]); ?> by John Roper</i></p>
+            <p><i>Published <?php echo date("F jS, Y", $article["created"]); ?> by <?php echo $authorDetails["name"]; ?></i></p>
         </article>
         <?php } } ?>
     </div>

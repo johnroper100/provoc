@@ -1736,6 +1736,8 @@ button,
   margin: 0 0 2em -6em;
   width: calc(100% + 6em); }
   .posts article {
+    background: rgba(210, 215, 217, 0.6);
+    padding: 1rem;
     -moz-flex-grow: 0;
     -webkit-flex-grow: 0;
     -ms-flex-grow: 0;

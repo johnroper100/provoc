@@ -23,6 +23,6 @@
         <header id="header">
             <span class="logo"><a href="<?php echo ORIGBASEPATH; ?>" style="border-bottom: none;"><strong><?php echo $siteTitle; ?></strong></a> - <?php echo $page["title"]; ?></span>
             <div class="icons">
-				<?php echo date("F jS, Y", $d); ?>
+				<?php echo date("F jS, Y"); ?>
 			</div>
         </header>
