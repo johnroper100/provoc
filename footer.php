@@ -27,7 +27,7 @@
 		<!-- Section -->
 		<section>
 			<header class="major">
-				<h2>Get in touch</h2>
+				<h2>Get In Touch</h2>
 			</header>
 			<p>Please feel free to contact us for any reason.</p>
 			<ul class="contact">

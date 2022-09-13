@@ -22,11 +22,7 @@
         <!-- Header -->
         <header id="header">
             <span class="logo"><a href="<?php echo ORIGBASEPATH; ?>" style="border-bottom: none;"><strong><?php echo $siteTitle; ?></strong></a> - <?php echo $page["title"]; ?></span>
-            <ul class="icons">
-                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                <li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
-                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                <li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
-            </ul>
+            <div class="icons">
+				<?php echo date("F jS, Y", $d); ?>
+			</div>
         </header>

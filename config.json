@@ -9,34 +9,42 @@
             "file": "home.json"
         },
         {
-            "name": "News",
-            "id": "news",
-            "file": "news.json"
+            "name": "Category",
+            "id": "category",
+            "file": "category.json"
         },
         {
-            "name": "News Item",
-            "id": "newsItem",
-            "file": "newsItem.json"
+            "name": "Article",
+            "id": "article",
+            "file": "article.json"
         }
     ],
     "collections": [
         {
             "name": "Pages",
             "id": "pages",
-            "icon": "fa-newspaper",
+            "icon": "fa-file",
             "subpath": "",
             "allowed_templates": [
-                "home",
-                "news"
+                "home"
             ]
         },
         {
-            "name": "News",
-            "id": "news",
-            "icon": "fa-newspaper",
-            "subpath": "news",
+            "name": "Categories",
+            "id": "categories",
+            "icon": "fa-bars",
+            "subpath": "",
             "allowed_templates": [
-                "newsItem"
+                "category"
+            ]
+        },
+        {
+            "name": "Articles",
+            "id": "articles",
+            "icon": "fa-newspaper",
+            "subpath": "articles",
+            "allowed_templates": [
+                "article"
             ]
         }
     ],
