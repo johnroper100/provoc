@@ -40,7 +40,7 @@
 
 		<!-- Footer -->
 		<footer id="footer">
-			<p class="copyright">&copy; <?php echo $siteTitle; ?>. All rights reserved. Original Design: <a href="https://html5up.net">HTML5 UP</a>. Site Construction: <a href="https://jmroper.com">John Roper</a></p>
+			<p class="copyright">&copy; <?php echo $siteTitle; ?>. All rights reserved.<br>Original Design: <a href="https://html5up.net">HTML5 UP</a>.<br>Site Construction and Modifications: <a href="https://jmroper.com">John Roper</a>.</p>
 		</footer>
 
 	</div>
