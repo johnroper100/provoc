@@ -10,7 +10,7 @@
                 </header>
                 <p><?php echo $page["content"]["description"]; ?></p>
                 <ul class="actions">
-                    <li><a href="#" class="button big">Learn More</a></li>
+                    <li><a href="<?php echo $page["content"]["link"]; ?>" class="button big">Learn More</a></li>
                 </ul>
             </div>
             <span class="image object">

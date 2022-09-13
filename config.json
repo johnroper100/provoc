@@ -4,7 +4,7 @@
     "author": "John Roper",
     "templates": [
         {
-            "name": "Home",
+            "name": "Home Page",
             "id": "home",
             "file": "home.json"
         },
@@ -17,6 +17,11 @@
             "name": "Article",
             "id": "article",
             "file": "article.json"
+        },
+        {
+            "name": "Generic Page",
+            "id": "page",
+            "file": "page.json"
         }
     ],
     "collections": [
@@ -26,14 +31,15 @@
             "icon": "fa-file",
             "subpath": "",
             "allowed_templates": [
-                "home"
+                "home",
+                "page"
             ]
         },
         {
             "name": "Categories",
             "id": "categories",
             "icon": "fa-bars",
-            "subpath": "",
+            "subpath": "category",
             "allowed_templates": [
                 "category"
             ]

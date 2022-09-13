@@ -1,5 +1,5 @@
 {
-    "name": "Article",
+    "name": "Generic Page",
     "sections": [
         {
             "name": "Header",
@@ -21,12 +21,6 @@
                     "name": "Page Content",
                     "type": "richtext",
                     "id": "pageContent"
-                },
-                {
-                    "name": "Category",
-                    "type": "page",
-                    "id": "category",
-                    "collection": "categories"
                 }
             ]
         }
