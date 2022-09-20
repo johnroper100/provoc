@@ -27,7 +27,7 @@
                 <h2>Recent Articles</h2>
             </header>
             <div class="posts">
-            <?php foreach(getPages("articles", 0) as $article) { ?>
+            <?php foreach(getPages("articles", 6) as $article) { ?>
                 <article>
                     <?php
                     if (isset($article["content"]["featuredImage"])) {
