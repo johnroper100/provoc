@@ -6,7 +6,7 @@
 
 		<!-- Search -->
 		<section id="search" class="alt">
-			<a href="<?php echo ORIGBASEPATH; ?>"><img src="https://www.leprovoc.com/wp-content/uploads/2020/02/Provoc1.png" alt="logo" style="width: 100%;"></a>
+			<a href="<?php echo ORIGBASEPATH; ?>"><img src="<?php echo THEMEPATH; ?>/images/Provoc1.png" alt="logo" style="width: 100%;"></a>
 		</section>
 
 		<!-- Menu -->
